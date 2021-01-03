@@ -24,7 +24,11 @@ print(f"Current Frequency: {psutil.cpu_freq().current:.1f}Mhz")
 print(f"CPU Usage: {psutil.cpu_percent()}%")
 print("CPU Usage/Core:")
 for i, perc in enumerate(psutil.cpu_percent(percpu=True,interval=1)):
+<<<<<<< HEAD
     print(f"Core {i+1}: {perc}%")
+=======
+    print(f"Core {i}: {perc}%")
+>>>>>>> main
 
 print("-"*40,"Temperaturen","-"*40)
 
